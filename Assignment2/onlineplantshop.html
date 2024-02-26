@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Plant Shopping</title>
+    <style>
+        
+        
+        /* Basic styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+            color: green;
+        }
+
+         /* Style the header */
+         .header {
+            background-color: black;
+            color:green;
+            padding: 0px;
+            text-align: center;
+            font-size: 50px;
+        }
+
+       
+        /* Style the navigation bar */
+        nav {
+            
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            text-align: left;
+            padding:0;
+        }
+
+        /* Style the links in the navigation bar */
+        nav a {
+            display: inline-block;
+          margin:0;
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Style the active link in the navigation bar */
+        nav a.active {
+            border-bottom: 2px solid #04AA6D;
+        }
+        nav a:hover{
+    background-color:none;
+    color:bisque;
+
+}
+
+
+        
+        .main {
+            width: 100%;
+            padding: 50px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 20px;
+        }
+        .card {
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .card-image {
+            width: 50%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .card-body {
+            padding: 10px;
+        }
+
+        .card-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .card-price {
+            font-size: 18px;
+            color: #4CAF50;
+            margin-bottom: 10px;
+        }
+
+        .card-button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .card-button:hover {
+            background-color: #3E8E41;
+        }
+
+        .footer {
+           position: fixed;
+           left:0;
+           bottom:0;
+           width:100%;
+           background-color: black;
+           color:white;
+           text-align: center;
+          }
+
+        .footer-text {
+            font-size: 18px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">Online Plant Shopping</div>
+            
+    <!-- Navigation element -->
+    <nav>
+    
+      <a href="animation.html">PLANT PARENTING TIPS</a>
+   <a href="onlineplantswap.html">PLANT SWAP</a>
+                 <a href="blog.html">BLOG</a>
+                  <a href="about.html">ABOUT</a>
+                    <a href="home.html">HOME</a>
+        </div>
+       
+    </nav>
+        </div>
+        <div class="main">
+            <div class="card">
+                <img src="alovera.png" alt="Plant 1" class="card-image">
+                <div class="card-body">
+                    <div class="card-title">Aloe Vera</div>
+                    <div class="card-price">100rs</div>
+                    <a href="#" class="card-button">Buy Now</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="orchid.png" alt="Plant 2" class="card-image">
+                <div class="card-body">
+                    <div class="card-title">Orchid</div>
+                    <div class="card-price">120rs</div>
+                    <a href="#" class="card-button">Buy Now</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="rose.png" alt="Plant 3" class="card-image">
+                <div class="card-body">
+                    <div class="card-title">Rose Plant</div>
+                    <div class="card-price">200rs</div>
+                    <a href="#" class="card-button">Buy Now</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="snakeplant.png" alt="Plant 4" class="card-image">
+                <div class="card-body">
+                    <div class="card-title">Snake Plant</div>
+                    <div class="card-price">180rs</div>
+                    <a href="#" class="card-button">Buy Now</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="money.png" alt="Plant 5" class="card-image">
+                <div class="card-body">
+                    <div class="card-title">Money plant</div>
+                    <div class="card-price">150rs</div>
+                    <a href="#" class="card-button">Buy Now</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="tulsi.png" alt="Plant 6" class="card-image">
+                <div class="card-body">
+                    <div class="card-title">Tulsi</div>
+                    <div class="card-price">210rs</div>
+                    <a href="#" class="card-button">Buy Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-text">© 2024 Plant Parenting Community. All rights reserved.</div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,162 @@
+<html>
+<head>
+    <style>
+         * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 100%;
+            margin: 0;
+            padding:0;
+        }
+
+        .header {
+            background-color: #4CAF50;
+            color: white;
+            font-size: 36px;
+            padding: 20px;
+            text-align: center;
+        }
+       
+        /* Style the navigation bar */
+        .nav {
+            
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            padding: 10px;
+        }
+
+        /* Style the links in the navigation bar */
+        .nav a {
+            display: inline-block;
+            margin: 10px;
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Style the active link in the navigation bar */
+        .nav a.active {
+            border-bottom: 2px solid #04AA6D;
+        }  
+       
+
+        
+
+        .main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 20px;
+        }
+
+        .card {
+            width: 500px;
+            height: 600px;
+            border: 1px solid #333;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin: 0;
+        }
+
+        .card img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+
+        .card h3 {
+            color: #4CAF50;
+            font-size: 20px;
+            padding: 10px;
+        }
+
+        .card p {
+            color: #333;
+            font-size: 16px;
+            padding: 10px;
+        }
+
+        .card button {
+            background-color: #4CAF50;
+            color: white;
+            font-size: 18px;
+            padding: 3px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            bottom:0%;
+        }
+
+        .card button:hover {
+            background-color: #333;
+        }
+
+        .footer {
+           position: fixed;
+           left:0;
+           bottom:0;
+           width:100%;
+           background-color: black;
+           color:white;
+           text-align: center;
+          }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Plant Parenting Community</h1>
+            <p>A place to share your love for plants and learn from other plant parents</p>
+        </div>
+        <div class="nav">
+            <a href="animation.html">PLANT PARENTING TIPS</a>
+            <a href="onlineplantshop.html">SHOP PLANT ONLINE</a>
+            <a href="onlineplantswap.html">PLANT SWAP</a>
+            <a href="blog.html">BLOG</a>
+            <a href="about.html">ABOUT</a>
+            
+        </div>
+        <div class="main">
+            <div class="card">
+                <img src="succulent.png" alt="Succulent plant">
+                <h3>Succulent Care Tips</h3>
+                <p>Learn how to water, prune, and propagate your succulents for a healthy and beautiful collection.
+                    They purify the air - Succulents, like snake plant and aloe vera, are excellent at cleansing the air and removing toxins.
+                    Rotate the succulents frequently.This will help the succulents tor emain healthy.
+                </p>
+                <button>Read More</button>
+            </div>
+            <div class="card">
+                <img src="orchid.png" alt="Orchid plant">
+                <h3>Orchid Blooming Guide</h3>
+                <p>Discover the secrets to make your orchids bloom again and enjoy their stunning flowers for longer.
+                    They prefer humidity levels from around 40% to 70%. You can keep an orchid blooming longer if you provide a warm and somewhat humid environment.
+                     Don't place your orchid where it will experience cold drafts, exposure to direct sunlight, or dry air from heating.
+           
+                </p>
+                <button>Read More</button>
+            </div>
+            <div class="card">
+                <img src="bonsai.png" alt="Bonsai plant">
+                <h3>Bonsai Basics</h3>
+                <p>Find out how to choose, shape, and maintain your bonsai tree for a mini masterpiece of nature.
+                    Bonsai is an art that has been studied and refined for centuries, but don't let that scare you off. With a little guidance, you're perfectly capable of growing your very own Bonsai trees without a mystical green thumb.
+           
+                </p>
+                <button>Read More</button>
+            </div>
+        </div>
+        <div class="footer">
+            <p>© 2024 Plant Parenting Community. All rights reserved.</p>
+            
+        </div>
+    </div>
+</body>
+</html>

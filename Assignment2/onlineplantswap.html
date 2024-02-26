@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Plant Swap</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 100%;
+            margin: 0 ;
+            padding:0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .header {
+            width: 100%;
+            height: 80px;
+            background-color: #4CAF50;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Style the navigation bar */
+        nav {
+            
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            padding: 10px;
+        }
+
+        /* Style the links in the navigation bar */
+        nav a {
+            display: inline-block;
+            margin: 10px;
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Style the active link in the navigation bar */
+        nav a.active {
+            border-bottom: 2px solid #04AA6D;
+        }
+         
+
+
+        .logo {
+            font-size: 32px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .main {
+            width: 100%;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+        }
+
+        .card {
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .card-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-body {
+            padding: 10px;
+        }
+
+        .card-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .card-text {
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .card-button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .card-button:hover {
+            background-color: #3E8E41;
+        }
+        .footer {
+           position: fixed;
+           left:0;
+           bottom:0;
+           width:100%;
+           background-color: black;
+           color:white;
+           text-align: center;
+          }
+           
+        
+
+        .footer-text {
+            font-size: 18px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">Online Plant Swap</div>
+        </div>
+        <nav>
+            <a href="animation.html">PLANT PARENTING TIPS</a>
+            <a href="onlineplantshop.html">SHOP PLANT ONLINE</a>
+            <a href="blog.html">BLOG</a>
+            <a href="about.html">ABOUT</a>
+            <a href="home.html">HOME</a>
+           
+        </nav>
+        <div class="main">
+            <div class="card">
+                <img src="alovera.png" alt="Plant 1" class="card-image">
+                <div class="card-body">
+                    <div class="card-title">Aloe Vera</div>
+                    <div class="card-text">Aloe vera is a succulent plant that is easy to grow and care for. It has many benefits for skin and health.</div>
+                    <a href="#" class="card-button">Swap Now</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="orchid.png" alt="Plant 2" class="card-image">
+                <div class="card-body">
+                    <div class="card-title">Orchid</div>
+                    <div class="card-text">Orchid is a beautiful and exotic flowering plant that comes in many varieties and colors. It requires moderate light and humidity.</div>
+                    <a href="#" class="card-button">Swap Now</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="tulsi.png" alt="Plant 3" class="card-image">
+                <div class="card-body">
+                    <div class="card-title">Ocimum Tenuiflorum</div>
+                    <div class="card-text">Tulsi is called the queen of all herbs, it is used widely in Ayurvedic and naturopathic medicines which helps in the healing of the human body in a natural manner..</div>
+                    <a href="#" class="card-button">Swap Now</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="rose.png" alt="Plant 4" class="card-image">
+                <div class="card-body">
+                    <div class="card-title">Rose plant</div>
+                    <div class="card-text">Roses are erect, climbing, or trailing shrubs.The leaves are alternate and pinnately compound with oval leaflets that are sharply toothed</div>
+                    <a href="#" class="card-button">Swap Now</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="money.png" alt="Plant 5" class="card-image">
+                <div class="card-body">
+                    <div class="card-title">Money Plant</div>
+                    <div class="card-text">Money plant is an evergreen plant.The survival rate of a money plant is higher in comparison to other indoor plants.</div>
+                    <a href="#" class="card-button">Swap Now</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="snakeplant.png" alt="Plant 6" class="card-image">
+                <div class="card-body">
+                    <div class="card-title">Snake Plant</div>
+                    <div class="card-text">Snake plant is a hardy and low-maintenance plant that can purify the air and remove toxins. It can survive in low light and dry conditions.</div>
+                    <a href="#" class="card-button">Swap Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-text">© 2024 Plant Parenting Community. All rights reserved.</div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        
+        /* Style the header, footer, nav and main elements */
+        header, footer, nav, main {
+            display: block;
+        }
+
+        /* Style the header */
+        header {
+            width:100%;
+            background-color: #04AA6D;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Style the navigation bar */
+        nav {
+            
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            padding: 10px;
+        }
+
+        /* Style the links in the navigation bar */
+        nav a {
+            display: inline-block;
+            margin: 10px;
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Style the active link in the navigation bar */
+        nav a.active {
+            border-bottom: 2px solid #04AA6D;
+        }
+
+        /* Style the main content */
+        main {
+            margin-top: 80px;
+            padding: 20px;
+        }
+
+        /* Style the sections in the main content */
+        section {
+            border: 3px solid #f1f1f1;
+            margin: 20px 0;
+        }
+
+        /* Style the images in the sections */
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Style the blog title and date in the sections */
+        h2, h5 {
+            padding: 10px;
+        }
+
+        /* Style the blog content in the sections */
+        p {
+            padding: 20px;
+        }
+
+        /* Style the form for writing a new blog */
+        form {
+            padding: 20px;
+        }
+
+        /* Style the inputs and textarea in the form */
+        input[type=text], textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        /* Style the button in the form */
+        button {
+            background-color: #04AA6D;
+            color: white;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        /* Style the footer */
+        .footer {
+           position: fixed;
+           left:0;
+           bottom:0;
+           width:100%;
+           background-color: black;
+           color:white;
+           text-align: center;
+          }
+
+        .footer-text {
+            font-size: 18px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header element -->
+    <header>
+        <h1>Plant Parenting Blog</h1>
+        <p>A place for plant lovers to share and learn</p>
+    </header>
+
+    <!-- Navigation element -->
+    <nav>
+        <a href="animation.html">PLANT PARENTING TIPS</a>
+        <a href="onlineplantshop.html">SHOP PLANT ONLINE</a>
+        <a href="onlineplantswap.html">PLANT SWAP</a>
+        <a href="about.html">ABOUT</a>
+        <a href="home.html">HOME</a>
+       
+    </nav>
+
+    <!-- Main element -->
+    <main>
+        <!-- Section element for writing a new blog -->
+        <section>
+            <h2>Write a new blog</h2>
+            <form action="post.php" method="post">
+                <input type="text" name="title" placeholder="Enter blog title" required>
+                <textarea name="content" rows="10" placeholder="Enter blog content" required></textarea>
+                <button type="submit">Post</button>
+            </form>
+        </section>
+
+        <!-- Section element for displaying a blog -->
+        <section>
+            <h2>How to propagate succulents</h2>
+            <h5>By John Doe, Jan 10, 2024</h5>
+            <img src="succulent.png" alt="Succulents">
+            <p>Succulents are easy to propagate and grow. You can use different methods to create new plants from your existing ones. Here are some of the most common ways to propagate succulents.</p>
+            <p>Leaf cuttings: You can take a healthy leaf from your succulent and place it on top of moist soil. Make sure the leaf is not buried or wet. After a few weeks, you should see roots and baby plants emerging from the leaf. You can then separate them and plant them in their own pots.</p>
+            <p>Stem cuttings: You can cut a stem from your succulent and let it dry for a few days. Then you can insert it into moist soil and water it lightly. The stem should root and grow into a new plant.</p>
+            <p>Offsets: Some succulents produce small offsets or pups around their base. You can gently remove them and plant them in their own pots. They should root and grow quickly.</p>
+            <p>Seeds: You can also grow succulents from seeds, but this is a slower and more difficult process. You need to sow the seeds in a well-draining soil mix and keep them moist and warm. The seeds should germinate in a few weeks, but it may take months or years for them to grow into mature plants.</p>
+        </section>
+    </main>
+
+    <!-- Footer element -->
+    <div class="footer">
+        <div class="footer-text">© 2024 Plant Parenting Community. All rights reserved.</div>
+    </div>
+</body>
+</html>
