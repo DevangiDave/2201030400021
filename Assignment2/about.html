@@ -16,6 +16,12 @@
             margin: 0;
             padding:0;
         }
+        .container{
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-gap:10px;
+            }
+
 
         .header {
             background-color: #4CAF50;
@@ -102,17 +108,10 @@
             color: white;
         }
         /* Media queries for responsiveness */
-        @media (max-width: 768px) {
-            .form-container {
-                width: 100%;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .form-container {
-                width: 100%;
-            }
-        }
+        @media screen and(max-width:600px)
+        {
+            body{font-size: 14px;
+        }}
         
     </style>
 </head>
