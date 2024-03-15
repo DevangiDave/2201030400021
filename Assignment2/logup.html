@@ -71,6 +71,7 @@
             width: 100%;
             max-width: 100%;
             margin: 0 auto;
+         
             background-color: white;
             border: 1px solid #ccc;
             padding:0;
@@ -144,18 +145,7 @@
            color:white;
            text-align: center;
           }
-        /* Media queries for responsiveness */
-        @media (max-width: 768px) {
-            .form-container {
-                width: 100%;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .form-container {
-                width: 100%;
-            }
-        }
+        
     </style>
 </head>
 <body>
@@ -176,7 +166,7 @@
                 <a href="home.html"> HOME </a>
        
     </nav>
-    </ul>
+    
    
     <!-- Login form -->
     <form autocomplete="on">
@@ -227,7 +217,6 @@
         const signupForm = document.getElementById("signup-form");
         const showSignupForm = document.getElementById("show-signup-form");
         const showLoginForm = document.getElementById("show-login-form");
-         <script>
         function validate() {
             var password = document.getElementById("password").value;
             var confirmPassword = document.getElementById("retype_password").value;
