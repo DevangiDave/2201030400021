@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         
         /* Style the header, footer, nav and main elements */
@@ -110,8 +108,42 @@
             font-size: 18px;
             color: white;
         }
+         /* Media queries for responsiveness */
+         @media (max-width: 768px) {
+            .form-container {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .form-container {
+                width: 100%;
+            }
+        }
     </style>
-</head>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <script>
+   $(document).ready(function() {
+     $("img").hide();
+     $("img").delay(3000).fadeIn(1000);
+   });
+   </script>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <script>
+   $(document).ready(function() {
+       // Select the first section element
+       var section = $("section:first");
+
+       // Animate the section element when the page loads
+       section.animate({
+           opacity: 0.5, // Set the opacity to 50%
+           marginTop: "50px" // Move the section element down by 50 pixels
+       }, 1000, function() {
+           // Animation complete callback function
+           console.log("Animation complete");
+       });
+   });
+   </script></head>
 <body>
     <!-- Header element -->
     <header>
