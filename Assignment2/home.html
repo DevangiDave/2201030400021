@@ -1,29 +1,37 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Parenting Community</title>
+
+    <!-- Add Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Add custom CSS -->
     <style>
-         * {
+        * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
         }
 
-        .container {
+     .container {
             max-width: 100%;
             margin: 0;
             padding:0;
         }
 
-        .header {
+     .header {
             background-color: #4CAF50;
             color: white;
             font-size: 36px;
             padding: 20px;
             text-align: center;
         }
-       
+
         /* Style the navigation bar */
-        .nav {
-            
+     .nav {
             top: 0;
             left: 0;
             width: 100%;
@@ -32,7 +40,7 @@
         }
 
         /* Style the links in the navigation bar */
-        .nav a {
+     .nav a {
             display: inline-block;
             margin: 10px;
             color: white;
@@ -40,21 +48,18 @@
         }
 
         /* Style the active link in the navigation bar */
-        .nav a.active {
+     .nav a.active {
             border-bottom: 2px solid #04AA6D;
-        }  
-       
+        }
 
-        
-
-        .main {
+     .main {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
             margin: 20px;
         }
 
-        .card {
+     .card {
             width: 500px;
             height: 600px;
             border: 1px solid #333;
@@ -64,25 +69,30 @@
             margin: 0;
         }
 
-        .card img {
+     .card img {
             width: 100%;
             height: 400px;
             object-fit: cover;
         }
 
-        .card h3 {
+     .card h3 {
             color: #4CAF50;
             font-size: 20px;
             padding: 10px;
         }
 
-        .card p {
+     .card p {
             color: #333;
             font-size: 16px;
             padding: 10px;
         }
 
-        .card button {
+     .card.card-body {
+            padding: 10px;
+            display: none;
+        }
+
+     .card button {
             background-color: #4CAF50;
             color: white;
             font-size: 18px;
@@ -94,32 +104,32 @@
             bottom:0%;
         }
 
-        .card button:hover {
+     .card button:hover {
             background-color: #333;
         }
 
-        .footer {
-           position: fixed;
-           left:0;
-           bottom:0;
-           width:100%;
-           background-color: black;
-           color:white;
-           text-align: center;
-         /* Media queries for responsiveness */
-         @media (max-width: 768px) {
-            .form-container {
+     .footer {
+            position: fixed;
+            left:0;
+            bottom:0;
+            width:100%;
+            background-color: black;
+            color:white;
+            text-align: center;
+        }
+
+        /* Media queries for responsiveness */
+        @media (max-width: 768px) {
+         .form-container {
                 width: 100%;
             }
         }
 
         @media (max-width: 480px) {
-            .form-container {
+         .form-container {
                 width: 100%;
             }
-        }  
         }
-
     </style>
 </head>
 <body>
@@ -128,73 +138,95 @@
             <h1>Plant Parenting Community</h1>
             <p>A place to share your love for plants and learn from other plant parents</p>
         </div>
-         <!-- Placeholder for the navigation bar -->
-    <div id="navigationBar"></div>
 
-    
-    
+        <!-- Placeholder for the navigation bar -->
+        <div id="navigationBar"></div>
+
         <div class="nav">
-           <a href ="animation.html">PLANT PARENTING TIPS</a>
-            <a href="onlineplantshop.html">SHOP PLANT ONLINE</a>
-            <a href="onlineplantswap.html">PLANT SWAP</a>
-            <a href="blog.html">BLOG</a>
-            <a href="about.html">ABOUT</a>
-            
+            <div class="container">
+                <a href ="animation.html">PLANT PARENTING TIPS</a>
+                <a href="onlineplantshop.html">SHOP PLANT ONLINE</a>
+                <a href="onlineplantswap.html">PLANT SWAP</a>
+                <a href="blog.html">BLOG</a>
+                <a href="about.html">ABOUT</a>
+            </div>
         </div>
+
         <div class="main">
             <div class="card">
                 <img src="succulent.png" alt="Succulent plant">
                 <h3>Succulent Care Tips</h3>
-                <p>Learn how to water, prune, and propagate your succulents for a healthy and beautiful collection.
-                    They purify the air - Succulents, like snake plant and aloe vera, are excellent at cleansing the air and removing toxins.
-                    Rotate the succulents frequently.This will help the succulents tor emain healthy.
-                </p>
-                <button>Read More</button>
+                <div class="card-body">
+                    <p>Learn how to water, prune, and propagate your succulents for a healthy and beautiful collection.
+                        They purify the air - Succulents, like snake plant and aloe vera.
+                                </p>
+                </div>
+                <button class="btn btn-primary">Read More</button>
             </div>
-            <div class="card">
-                <img src="orchid.png" alt="Orchid plant">
-                <h3>Orchid Blooming Guide</h3>
-                <p>Discover the secrets to make your orchids bloom again and enjoy their stunning flowers for longer.
-                    They prefer humidity levels from around 40% to 70%. You can keep an orchid blooming longer if you provide a warm and somewhat humid environment.
-                     Don't place your orchid where it will experience cold drafts, exposure to direct sunlight, or dry air from heating.
-           
-                </p>
-                <button>Read More</button>
-            </div>
+
             <div class="card">
                 <img src="bonsai.png" alt="Bonsai plant">
-                <h3>Bonsai Basics</h3>
-                <p>Find out how to choose, shape, and maintain your bonsai tree for a mini masterpiece of nature.
-                    Bonsai is an art that has been studied and refined for centuries, but don't let that scare you off. With a little guidance, you're perfectly capable of growing your very own Bonsai trees without a mystical green thumb.
-           
-                </p>
-                <button>Read More</button>
+                <h3>Bonsai Care Tips</h3>
+                <div class="card-body">
+                    <p>Bonsai trees are a unique and rewarding hobby, but they require careful attention to detail.
+                        Choose the right tree for your climate and experience level.
+                        Provide the right soil, water, and sunlight for your tree.
+                        
+                    </p>
+                </div>
+                <button class="btn btn-primary">Read More</button>
+            </div>
+
+            <div class="card">
+                <img src="orchid.png" alt="Orchid plant">
+                <h3>Orchid Care Tips</h3>
+                <div class="card-body">
+                    <p>Orchids are beautiful and exotic plants, but they can be a bit tricky to care for.
+                        Provide the right light, temperature, and humidity for your orchid.
+                        
+                    </p>
+                </div>
+                <button class="btn btn-primary">Read More</button>
             </div>
         </div>
+
         <div class="footer">
-            <p>© 2024 Plant Parenting Community. All rights reserved.</p>
-            
+            <p>&copy; 2023 Plant Parenting Community</p>
         </div>
-    </div><script>
-        // List of navigation items
-        var navItems = ['Home', 'About', 'Events', 'Gallery', 'Contact'];
-      
-        // Function to create navigation bar
-        function createNavBar(items) {
-          var navBar = document.getElementById('navbar');
-          for (var i = 0; i < items.length; i++) {
-            var a = document.createElement('a');
-            a.innerText = items[i];
-            a.href = '#' + items[i].toLowerCase();
-            navBar.appendChild(a);
-          }
-        }
-      
-        // Create the navigation bar when the window loads
-        window.onload = function() {
-          createNavBar(navItems);
-        };
-      </script>
-      
-      </body>
-      </html>
+    </div>
+
+    <!-- Add Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Add custom JS -->
+    <script>
+        $(document).ready(function() {
+            // Create the navigation bar
+            var nav = $('<nav class="navbar navbar-expand-lg navbar-light bg-light">').appendTo('#navigationBar');
+            var navBrand = $('<a class="navbar-brand" href="#">Plant Parenting Community</a>').appendTo(nav);
+            var navToggle = $('<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">').appendTo(nav);
+            var navToggleIcon = $('<span class="navbar-toggler-icon"></span>').appendTo(navToggle);
+            var navCollapse = $('<div class="collapse navbar-collapse" id="navbarNav">').appendTo(nav);
+            var navList = $('<ul class="navbar-nav">').appendTo(navCollapse);
+            $('<li class="nav-item"><a class="nav-link" href="animation.html">PLANT PARENTING TIPS</a></li>').appendTo(navList);
+            $('<li class="nav-item"><a class="nav-link" href="onlineplantshop.html">SHOP PLANT ONLINE</a></li>').appendTo(navList);
+            $('<li class="nav-item"><a class="nav-link" href="onlineplantswap.html">PLANT SWAP</a></li>').appendTo(navList);
+            $('<li class="nav-item"><a class="nav-link" href="blog.html">BLOG</a></li>').appendTo(navList);
+            $('<li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a></li>').appendTo(navList);
+
+            // Add Bootstrap button plugins to the "Read More" buttons
+            var buttons = $('.card button');
+            buttons.each(function() {
+                var button = $(this);
+                button.addClass('btn btn-primary');
+                button.on('click', function() {
+                    // Show the card content when the button is clicked
+                    var card = button.closest('.card');
+var content = card.find('.card-body');
+                    content.slideToggle();
+                });
+            });
+        });
+    </script>
+</body>
+</html>
